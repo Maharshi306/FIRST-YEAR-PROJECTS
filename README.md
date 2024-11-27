@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 #define MAX 50
+
 // Structure to store guest details
 typedef struct{
     int id;
@@ -12,8 +13,10 @@ typedef struct{
     int roomNumber;
     int nights;
 } Guest;
+
 Guest hotel[MAX];
 int count=0;
+
 // Function to add a guest
 void addGuest() {
     if (count<MAX) {
@@ -32,6 +35,7 @@ void addGuest() {
         printf("Sorry,the hotel is full!\n");
     }
 }
+
 // Function to view all guests
 void viewGuests() {
     if (count == 0) {
@@ -68,6 +72,7 @@ void checkOutGuest() {
         printf("Guest with ID %d not found.\n", id);
     }
 }
+
 // Main function
 int main() {
     int choice;
