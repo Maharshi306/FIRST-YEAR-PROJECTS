@@ -1,5 +1,7 @@
 # FIRST-YEAR-PROJECTS
 
+//Hotel Management System
+
 #include <stdio.h>
 #include <string.h>
 #define MAX 50
